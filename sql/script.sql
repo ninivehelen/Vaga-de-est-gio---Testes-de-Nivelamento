@@ -1,3 +1,4 @@
+
 -- Criando o banco de dados
 CREATE DATABASE dados_ans;
 
@@ -41,39 +42,39 @@ CREATE TABLE demonstracoes_contabeis (
 
 --- Essa parte é para subir os dados dos arquivos da pasta arquivos e pasta relatorio para preencher com dados as tabelas criadas
 -- Importando operadoras_plano_saude
-\copy operadoras_plano_saude (registro_operadora, cnpj, razao_social, nome_fantasia, modalidade, logradouro, numero, complemento, bairro, cidade, uf, cep, ddd, telefone, fax, endereco_eletronico, representante, cargo_representante, regiao_de_comercializacao, data_registro_ans) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/relatorio/Relatorio_cadop.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy operadoras_plano_saude (registro_operadora, cnpj, razao_social, nome_fantasia, modalidade, logradouro, numero, complemento, bairro, cidade, uf, cep, ddd, telefone, fax, endereco_eletronico, representante, cargo_representante, regiao_de_comercializacao, data_registro_ans) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/relatorio/Relatorio_cadop.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 1T2023
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/1T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/1T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 2T2023
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/2T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/2T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 3T2023
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/3T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/3T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 4T2023
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/4T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/4T2023.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 1T2024
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/1T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/1T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 2T2024
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/2T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/2T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 3T2024
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/3T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/3T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 -- Importando demonstracoes_contabeis 4T2024
-\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/4T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+\copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/4T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 
 

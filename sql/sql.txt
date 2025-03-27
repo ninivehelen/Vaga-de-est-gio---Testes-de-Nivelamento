@@ -1,6 +1,6 @@
 Comando para rodar o script.sql
 psql -U postgres
-\i 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/script.sql'
+\i 'C:/Users/seu_usuario/Documentos/projeto/sql/script.sql'
 
 Querys Analítica
 
