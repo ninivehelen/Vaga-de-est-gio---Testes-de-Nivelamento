@@ -42,7 +42,19 @@ Como o primeiro link contém valores com vírgulas (`,`), o que não é compatí
 
 2. Após acessar o PostgreSQL, execute o comando abaixo para rodar o script de criação do banco de dados:
 
-\i '{C:caminho_pasta_onde_esta_o_scrotp_sql}/script.sql'
+\i 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/script.sql'
+
+Substitua o caminho original ('C:/Users/niniv/OneDrive/Documentos/intuitive/sql/script.sql') pelo  pelo caminho correto da sua máquina.
+
+Exemplo; \i 'C:/Users/seu_usuario/Documentos/projeto/sql/script.sql'
+
+Dentro do script.sql precisa também mudar o caminho de todos os arquivos pelo original da sua maquina, la esta assim: 
+ \copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) FROM 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/arquivos/4T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
+
+troque o caminho de todos que tem esse código pelo original da sua maqui correspondente a cada arquivo o os do 1T2023 todos e o do Relatorio_cadop
+
+Exemplo: \copy demonstracoes_contabeis (data_operadora, reg_ans, cd_conta_contabil, descricao, vl_saldo_inicial, vl_saldo_final) 
+FROM 'C:/Users/seu_usuario/Documentos/projeto/sql/arquivos/4T2024.csv' DELIMITER ';' CSV HEADER ENCODING 'UTF8';
 
 Aguarde até que as tabelas sejam criadas e os dados dos arquivos sejam inseridos nas respectivas tabelas.
 
