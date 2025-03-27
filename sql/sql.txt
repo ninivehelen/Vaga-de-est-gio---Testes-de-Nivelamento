@@ -1,0 +1,23 @@
+Comando para rodar o script.sql
+psql -U postgres
+\i 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/script.sql'
+
+Querys Analítica
+
+Query 2: Quais as 10 operadoras com maiores despesas nessa categoria no último ano?
+SELECT 
+    operadoras_plano_saude.registro_operadora, operadoras_plano_saude.Nome_Fantasia, demonstracoes_contabeis.data_operadora,
+    SUM(demonstracoes_contabeis.vl_saldo_final) AS total_despesas
+FROM 
+    operadoras_plano_saude
+INNER JOIN 
+    demonstracoes_contabeis 
+    ON operadoras_plano_saude.registro_operadora = demonstracoes_contabeis.reg_ans
+WHERE 
+    demonstracoes_contabeis.descricao LIKE '%EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR%'
+    AND demonstracoes_contabeis.data_operadora < date_trunc('year', CURRENT_DATE)
+GROUP BY 
+    operadoras_plano_saude.Nome_Fantasia,data_operadora, operadoras_plano_saude.registro_operadora
+ORDER BY 
+    total_despesas DESC
+LIMIT 10;
