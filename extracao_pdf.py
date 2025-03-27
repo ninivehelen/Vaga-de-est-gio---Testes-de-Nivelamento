@@ -23,9 +23,9 @@ def baixar_tabela():
     df_final_tabela.replace('', pd.NA, inplace=True)
     df_final_tabela.dropna(how='all', inplace=True) 
     print('Tabelas baixadas')
-    df_final_tabela.to_csv('tabela_rol_procedimento.csv',sep=';', encoding= 'utf-8-sig', index=False)
+    df_final_tabela.to_csv('tabela_rol/tabela_rol_procedimento.csv',sep=';', encoding= 'utf-8-sig', index=False)
     print('csv das tabelas salvo')
-    compacta_pasta('Teste_ninive', 'Teste_ninive')
+    compacta_pasta('tabela_rol', 'Teste_ninive')
 
 
 
