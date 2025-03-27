@@ -42,7 +42,7 @@ Como o primeiro link contém valores com vírgulas (`,`), o que não é compatí
 
 2. Após acessar o PostgreSQL, execute o comando abaixo para rodar o script de criação do banco de dados:
 
-\i 'C:/Users/niniv/OneDrive/Documentos/intuitive/sql/script.sql'
+\i '{C:caminho_pasta_onde_esta_o_scrotp_sql}/script.sql'
 
 Aguarde até que as tabelas sejam criadas e os dados dos arquivos sejam inseridos nas respectivas tabelas.
 
